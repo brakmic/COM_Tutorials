@@ -1,14 +1,16 @@
 ## Introduction
 
-Welcome, dear reader, to this guide! We will talk about COM. COM, or Component Object Model, is a way of doing things in Microsoft. It allows different parts of a program to talk to each other.
+Greetings, and welcome to this comprehensive guide dedicated to the exploration of COM, or Component Object Model. Developed by Microsoft, COM represents a binary-interface standard that allows different components of a program to communicate seamlessly.
 
-In this guide, we will make a COM component with our own hands. No frameworks. No fancy tools. Just us and the code. It's not the usual way, but it's fun and a good way to learn.
+In this guide, we will delve into the fascinating process of handcrafting a COM component. We won't be relying on any complex frameworks or sophisticated tools. Instead, it will be a journey guided by the elegance of pure code. Although this might seem unconventional, it offers an incredibly enriching learning experience and the joy of engaging directly with the foundational elements of COM. Let's embark on this enlightening journey together!
 
 We will use Visual Studio 6, but not its graphical part. We need it only because it has a C++ compiler. We will write all the code ourselves, by hand.
 
 Our workspace is an old system: Windows XP. It will run inside a virtual machine. A little bit old school, but good for learning.
 
 We will write our code in Notepad++. It's simple and good enough for us. After writing the code, we will compile and run it from the console. That's all we need.
+
+While the examples will work perfectly fine on older systems such as Windows XP, you can effortlessly follow along and execute the code on any modern Windows platform. Embrace the freedom of learning without any constraints!
 
 So, let's start our journey into the world of COM! It may be a bit old, but it's still important and good to know. Happy coding!
 
