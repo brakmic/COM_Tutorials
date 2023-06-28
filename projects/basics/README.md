@@ -703,7 +703,7 @@ regsvr32 HelloWorld.dll
 
 You can now seach for `HelloWorld` in the Windows Registry.
 
-![registry_search](./gifs/registry_search.gif)
+![registry_search](../../gifs/registry_search.gif)
 
 ### Registry Entries
 
@@ -732,9 +732,9 @@ HKEY_CLASSES_ROOT
          (Default) = '{DC0F3891-93F3-42E9-A117-729B4F3C775A}'
 ```
 
-![registry_entry](./images/registry_entry.png)
+![registry_entry](../../images/registry_entry.png)
 
-![regedit_component_info](./images/regedit_component_info.png)
+![regedit_component_info](../../images/regedit_component_info.png)
 
 ## Step 9: Compile and link the C++ client
 
@@ -904,7 +904,7 @@ Set hw = Nothing
 
 * In the script, the `CreateObject` function is used to create an instance of the HelloWorld COM object. This function is similar to the `win32com.client.Dispatch` function in Python, and it uses the **ProgID** of the COM component, "HelloWorldLib.HelloWorld", to create the object.
 
-![progid](./images/progid.png)
+![progid](../../images/progid.png)
 
 * The SayHello method is called first with no arguments. Since this method doesn't return any values, there's no need to assign its return value to a variable.
 
@@ -914,7 +914,7 @@ Set hw = Nothing
 
 * Finally, the `hw` object is set to Nothing, which releases the COM object and allows its resources to be reclaimed. This is a good practice when working with COM objects, as it ensures that they don't linger around and take up memory after they're no longer needed.
 
-![using_com_component](./gifs/using_com_component.gif)
+![using_com_component](../../gifs/using_com_component.gif)
 
 ## Step 13: Clean up
 
