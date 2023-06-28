@@ -491,7 +491,7 @@ This separation might seem redundant, but it adds flexibility to COM by decoupli
 
 ---
 
-Keep this file as `HelloworldDll.cpp`.
+Keep this file as `HelloWorldDll.cpp`.
 
 ```cpp
 #include <Windows.h>
