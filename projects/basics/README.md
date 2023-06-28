@@ -1,4 +1,4 @@
-## Introduction (you can skip if you want)
+## Introduction
 
 Welcome, dear reader, to this guide! We will talk about COM. COM, or Component Object Model, is a way of doing things in Microsoft. It allows different parts of a program to talk to each other.
 
