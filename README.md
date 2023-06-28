@@ -8,8 +8,8 @@ Component Object Model (COM) is a binary-interface standard for software compone
 
 ## Contents
 
-1. [Creating COM Server and Client](./projects/basics)
-2. [Understanding COM Connection Points](./projects/connectionpoints)
+1. [COM Basics](./projects/basics)
+2. [COM Connection Points](./projects/connectionpoints)
 3. [COM Thread Safety](./projects/threading)
 4. [COM Interoperability](./projects/interop)
 
