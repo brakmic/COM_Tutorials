@@ -874,7 +874,7 @@ In the provided Python example, Python version 3.4.4 is being used. This is impo
 
 It's also worth noting that the `win32com.client` module used in the Python script is part of the `pywin32` package. This package provides access to many of the Windows APIs from Python, and is a key tool when interfacing Python with COM objects or any other native Windows functionality.
 
-One of the most reliable methods for installing [pywin32](https://github.com/mhammond/pywin32/releases) version 221 under these conditions is to use a [pre-packaged installer](https://github.com/mhammond/pywin32/releases/download/b221/pywin32-221.win32-py3.4.exe) or my zipped package that includes all of the necessary files.
+One of the most reliable methods for installing [pywin32](https://github.com/mhammond/pywin32/releases) version 221 under these conditions is to use a [pre-packaged installer](https://github.com/mhammond/pywin32/releases/download/b221/pywin32-221.win32-py3.4.exe).
 
 ## Step 12: Using COM in VBScript
 
