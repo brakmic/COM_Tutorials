@@ -1,0 +1,34 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+    uuid("A851A7FE-4903-48AF-A694-51FEB755EE5B"),
+    helpstring("IHelloWorld Interface"),
+    dual,
+    oleautomation
+]
+interface IHelloWorld : IDispatch{
+    [helpstring("method SayHello"), id(1)] HRESULT SayHello();
+    [helpstring("method SayHelloStr"), id(2)] HRESULT SayHelloStr([out, retval] BSTR* greeting);
+    [helpstring("method SayHelloTo"), id(3)] HRESULT SayHelloTo([in] BSTR name, [out, retval] BSTR* greeting);
+};
+
+[
+    uuid("9EBDD250-565C-4182-B5E9-70CF63A896E1"),
+    helpstring("HelloWorldLib Type Library"),
+    version(1.0)
+]
+library HelloWorldLib
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    [
+        uuid("DC0F3891-93F3-42E9-A117-729B4F3C775A"),
+        helpstring("HelloWorld Class")
+    ]
+    coclass HelloWorld
+    {
+        [default] interface IHelloWorld;
+    };
+}
