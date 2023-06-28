@@ -1,4 +1,4 @@
-# COM Tutorial
+# COM Tutorials
 
 This repository is dedicated to providing comprehensive tutorials on Component Object Model (COM) programming. These tutorials range from the basics of COM interfaces and classes to more advanced topics such as Connection Points, Sinks, Threading, and Interop. Each tutorial includes fully implemented source code for a deeper and more practical understanding of the topic.
 
