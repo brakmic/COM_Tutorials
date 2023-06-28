@@ -2,7 +2,7 @@
 
 Greetings, and welcome to this comprehensive guide dedicated to the exploration of COM, or Component Object Model. Developed by Microsoft, COM represents a binary-interface standard that allows different components of a program to communicate seamlessly.
 
-In this guide, we will delve into the fascinating process of handcrafting a COM component. We won't be relying on any complex frameworks or sophisticated tools. Instead, it will be a journey guided by the elegance of pure code. Although this might seem unconventional, it offers an incredibly enriching learning experience and the joy of engaging directly with the foundational elements of COM. Let's embark on this enlightening journey together!
+In this guide, we will delve into the fascinating process of handcrafting a COM component. We won't be relying on any complex frameworks or sophisticated tools. Instead, it will be a journey guided by the elegance of pure code. Although this might seem unconventional, it offers an incredibly enriching learning experience and the joy of engaging directly with the foundational elements of COM.
 
 We will use Visual Studio 6, but not its graphical part. We need it only because it has a C++ compiler. We will write all the code ourselves, by hand.
 
