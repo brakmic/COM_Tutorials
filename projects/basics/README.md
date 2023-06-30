@@ -185,9 +185,9 @@ HelloWorld::HelloWorld() : m_cRef(1) {}
 // QueryInterface allows a client to obtain pointers to other interfaces on a given object
 HRESULT __stdcall HelloWorld::QueryInterface(const IID& riid, void** ppv)
 {
-    // If the requested interface is IUnknown, IHelloWorld, or IDispatch,
+    // If the requested interface is IUnknown, IDispatch, or IHelloWorld
     // we increment the ref count and return a pointer to it
-    if (riid == IID_IUnknown || riid == IID_IHelloWorld || riid == IID_IDispatch)
+    if (riid == IID_IUnknown || riid == IID_IDispatch || riid == IID_IHelloWorld)
     {
         *ppv = static_cast<IHelloWorld*>(this);
     }
