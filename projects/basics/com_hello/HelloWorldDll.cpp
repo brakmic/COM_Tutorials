@@ -130,12 +130,13 @@ extern "C" HRESULT __stdcall DllUnregisterServer()
         return SELFREG_E_CLASS;
     }
 
-    // Unregister CLSID
+    // Unregister InprocServer32 under CLSID
     lResult = SHDeleteKeyW(HKEY_CLASSES_ROOT, L"CLSID\\{DC0F3891-93F3-42E9-A117-729B4F3C775A}\\InprocServer32");
     if (lResult != ERROR_SUCCESS) {
         return SELFREG_E_CLASS;
     }
 
+    // Unregister CLSID
     lResult = SHDeleteKeyW(HKEY_CLASSES_ROOT, L"CLSID\\{DC0F3891-93F3-42E9-A117-729B4F3C775A}");
     if (lResult != ERROR_SUCCESS) {
         return SELFREG_E_CLASS;
@@ -146,7 +147,7 @@ extern "C" HRESULT __stdcall DllUnregisterServer()
     if (lResult != ERROR_SUCCESS) {
         return SELFREG_E_CLASS;
     }
-	
+
     // Unregister ProgID
     lResult = SHDeleteKeyW(HKEY_CLASSES_ROOT, L"HelloWorldLib.HelloWorld");
     if (lResult != ERROR_SUCCESS) {
