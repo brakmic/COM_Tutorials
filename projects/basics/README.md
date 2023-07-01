@@ -71,7 +71,25 @@ Our `IHelloWorld` interface methods return an HRESULT, which is the standard ret
 
 The addition of `id` attributes to the methods within the interface ensures that these methods can be correctly identified within the `vtable`, allowing for proper invocation.
 
+## A note on vtables
+
 In COM, a vtable is a table of function pointers that enables dynamic method binding. Each interface method has an entry in the vtable that points to its implementation. When a client invokes a method on an interface, the COM runtime uses the vtable to find and call the correct method implementation. This vtable-based approach is crucial for the language-independent communication that COM provides.
+
+```shell
+         COM object
+            /  \
+           /    \
+          /      \
+     IUnknown   IDispatch
+         |          |
+     [vtable]  [vtable]
+      |   |      |   |
+   QueryIntf  Invoke
+   AddRef    GetIDsOfNames
+   Release
+```
+
+In our example, the COM object supports two interfaces: `IUnknown` and `IDispatch`. Each of these interfaces has its own vtable that lists all methods the interface provides. For instance, when a client application wants to call the `Invoke` method on the `IDispatch` interface, it follows the **vtable pointer** to find the actual function in memory.
 
 Expanding on the HelloWorldLib library, we define our `coclass`, HelloWorld. This coclass has its own unique UUID and is specifically configured to implement the IHelloWorld interface as its `default`. It's essential to note that a single coclass in COM can implement multiple interfaces, making it a highly flexible unit of functionality. 
 
