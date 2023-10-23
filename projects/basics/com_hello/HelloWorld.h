@@ -20,7 +20,7 @@ public:
     HRESULT __stdcall Invoke(DISPID dispIdMember, REFIID riid, LCID lcid, WORD wFlags, DISPPARAMS* pDispParams, VARIANT* pVarResult, EXCEPINFO* pExcepInfo, UINT* puArgErr);
 
     // IHelloWorld methods
-	  HRESULT __stdcall SayHello();
+    HRESULT __stdcall SayHello();
     HRESULT __stdcall SayHelloStr(BSTR* greeting);
     HRESULT __stdcall SayHelloTo(BSTR name, BSTR* greeting);
 };
