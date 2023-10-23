@@ -26,4 +26,4 @@ To run the tutorials and the included source code, you need the following:
 
 ## License
 
-[MIT](./LICENSE).
+[MIT](./LICENSE)
