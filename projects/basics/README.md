@@ -17,7 +17,7 @@ While the examples will work perfectly fine on older systems such as Windows XP,
 
 So, let's start our journey into the world of COM! It may be a bit old, but it's still important and good to know. Happy coding!
 
-## Introduction
+## What is COM?
 
 Before we begin, it's important to understand what COM (Component Object Model) is and why it's used. COM is a binary-interface standard that allows different software components to communicate with each other. It's widely used in Windows for creating and using custom and system-provided objects. If you've used Microsoft Office automation or written a Windows Shell extension, you've used COM.
 
